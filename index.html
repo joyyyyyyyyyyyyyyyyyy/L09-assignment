@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <!-- Add the CDN link for the DataTables stylesheet here -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            background-image: linear-gradient(#bdb2ff,#9bf6ff,#caffbf,#fdffb6,#ffd6a5,#ffadad,#ffd6a5, #fdffb6,#caffbf, #9bf6ff,#bdb2ff);
+        }
+
+        .wrap {
+            margin: 0 auto;
+            width: 1000px;
+        }
+    </style>
+</head>
+
+<body class="wrap" style="text-align: center;">
+    <header style="font-size: 40px; font-weight: bold; padding-top: 20px;">Polytechnics In Singapore</header><br>
+    <h3 style="font-size: 30px; font-weight: bold;">Polytechnic Locations</h3>
+    <svg width="1000" height="650">
+        <image xlink:href="singapore.svg" width="100%" height="100%"/>
+        <circle id="republic" cx="450" cy="80" r="15" fill="yellow" stroke="none"/>
+        <circle id="singapore" cx="430" cy="420" r="15" fill="yellow" stroke="none"/>
+        <circle id="ngeeann" cx="410" cy="370" r="15" fill="yellow" stroke="none"/>
+        <circle id="nanyang" cx="650" cy="250" r="15" fill="yellow" stroke="none"/>
+        <circle id="temasek" cx="820" cy="350" r="15" fill="yellow" stroke="none"/>
+      </svg>      
+
+    <h3 style="font-size: 30px; font-weight: bold; ">Courses in Republic Polytechnic</h3>
+    <table id="courses" class="display">
+        <thead>
+            <tr>
+                <th>School</th>
+                <th>Course Name</th>
+                <th>Course Abbreviation</th>
+                <th>Course Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>School of Applied Science</td>
+                <td>Diploma in Biomedical Science</td>
+                <td>DBMS</td>
+                <td>R14</td>
+            </tr>
+            <tr>
+                <td>School of Applied Science</td>
+                <td>Diploma in Biotechnology</td>
+                <td>DBIO</td>
+                <td>R16</td>
+            </tr>
+            <tr>
+                <td>School of Applied Science</td>
+                <td>Diploma in Environmental Science</td>
+                <td>DENV</td>
+                <td>R29</td>
+            </tr>
+            <tr>
+                <td>School of Applied Science</td>
+                <td>Diploma in Marine Science &amp; Aquaculture</td>
+                <td>DMAC</td>
+                <td>R53</td>
+            </tr>
+            <tr>
+                <td>School of Applied Science</td>
+                <td>Diploma in Materials Science</td>
+                <td>DMTS</td>
+                <td>R17</td>
+            </tr>
+            <tr>
+                <td>School of Applied Science</td>
+                <td>Diploma in Pharmaceutical Science</td>
+                <td>DPHM</td>
+                <td>R22</td>
+            </tr>
+            <tr>
+                <td>School of Applied Science</td>
+                <td>Common Science Programme</td>
+                <td>CSP</td>
+                <td>R59</td>
+            </tr>
+            <tr>
+                <td>School of Engineering</td>
+                <td>Diploma in Aerospace Engineering</td>
+                <td>DAE</td>
+                <td>R40</td>
+            </tr>
+            <tr>
+                <td>School of Engineering</td>
+                <td>Diploma in Aviation Management</td>
+                <td>DAVM</td>
+                <td>R39</td>
+            </tr>
+            <tr>
+                <td>School of Engineering</td>
+                <td>Diploma in Engineering Design with Business</td>
+                <td>DEDB</td>
+                <td>R56</td>
+            </tr>
+            <tr>
+                <td>School of Engineering</td>
+                <td>Diploma in Electrical &amp; Electronic Engineering</td>
+                <td>DEEE</td>
+                <td>R50</td>
+            </tr>
+            <tr>
+                <td>School of Engineering</td>
+                <td>Diploma in Engineering Systems &amp; Management</td>
+                <td>DESM</td>
+                <td>R54</td>
+            </tr>
+            <tr>
+                <td>School of Engineering</td>
+                <td>Diploma in Green Building Energy Management</td>
+                <td>DGEM</td>
+                <td>R41</td>
+            </tr>
+            <tr>
+                <td>School of Engineering</td>
+                <td>Diploma in Supply Chain Management</td>
+                <td>DSCM</td>
+                <td>R21</td>
+            </tr>
+            <tr>
+                <td>School of Engineering</td>
+                <td>Common Engineering Programme</td>
+                <td>CEP</td>
+                <td>R42</td>
+            </tr>
+            <tr>
+                <td>School of Hospitality</td>
+                <td>Diploma in Integrated Events Management</td>
+                <td>DIEM</td>
+                <td>R28</td>
+            </tr>
+            <tr>
+                <td>School of Hospitality</td>
+                <td>Diploma in Customer Experience Management with Business</td>
+                <td>DCXB</td>
+                <td>R34</td>
+            </tr>
+            <tr>
+                <td>School of Hospitality</td>
+                <td>Diploma in Hotel &amp; Hospitality Management</td>
+                <td>DHHM</td>
+                <td>R37</td>
+            </tr>
+            <tr>
+                <td>School of Hospitality</td>
+                <td>Diploma in Restaurant &amp; Culinary Operations</td>
+                <td>DRCO</td>
+                <td>R46</td>
+            </tr>
+            <tr>
+                <td>School of Hospitality</td>
+                <td>Diploma in Wellness &amp; Hospitality Business</td>
+                <td>DWHB</td>
+                <td>R44</td>
+            </tr>
+            <tr>
+                <td>School of InfoComm</td>
+                <td>Diploma in Financial Technology</td>
+                <td>DFT</td>
+                <td>R18</td>
+            </tr>
+            <tr>
+                <td>School of InfoComm</td>
+                <td>Diploma in Business Information Systems</td>
+                <td>DBIS</td>
+                <td>R13</td>
+            </tr>
+            <tr>
+                <td>School of InfoComm</td>
+                <td>Diploma in Information Technology</td>
+                <td>DIT</td>
+                <td>R12</td>
+            </tr>
+            <tr>
+                <td>School of InfoComm</td>
+                <td>Diploma in Digital Design &amp; Development</td>
+                <td>DDDD</td>
+                <td>R47</td>
+            </tr>
+            <tr>
+                <td>School of InfoComm</td>
+                <td>Diploma in Infocomm Security Management</td>
+                <td>DISM</td>
+                <td>R55</td>
+            </tr>
+            <tr>
+                <td>School of Management and Communication</td>
+                <td>Diploma in Consumer Behaviour &amp; Research</td>
+                <td>DCBR</td>
+                <td>R48</td>
+            </tr>
+            <tr>
+                <td>School of Management and Communication</td>
+                <td>Diploma in Human Resource Management with Psychology</td>
+                <td>DHRMP</td>
+                <td>R52</td>
+            </tr>
+            <tr>
+                <td>School of Management and Communication</td>
+                <td>Diploma in Mass Communication</td>
+                <td>DMC</td>
+                <td>R32</td>
+            </tr>
+            <tr>
+                <td>School of Management and Communication</td>
+                <td>Diploma in Business</td>
+                <td>DBIZ</td>
+                <td>R60</td>
+            </tr>
+            <tr>
+                <td>School of Management and Communication</td>
+                <td>Common Business Programme</td>
+                <td>CBP</td>
+                <td>R57</td>
+            </tr>
+            <tr>
+                <td>School of Sports, Health and Leisure</td>
+                <td>Diploma in Health Management &amp; Promotion</td>
+                <td>DHMP</td>
+                <td>R43</td>
+            </tr>
+            <tr>
+                <td>School of Sports, Health and Leisure</td>
+                <td>Diploma in Health Services Management</td>
+                <td>DHSM</td>
+                <td>R45</td>
+            </tr>
+            <tr>
+                <td>School of Sports, Health and Leisure</td>
+                <td>Diploma in Outdoor &amp; Adventure Learning</td>
+                <td>DOAL</td>
+                <td>R33</td>
+            </tr>
+            <tr>
+                <td>School of Sports, Health and Leisure</td>
+                <td>Diploma in Sport Coaching</td>
+                <td>DSC</td>
+                <td>R49</td>
+            </tr>
+            <tr>
+                <td>School of Sports, Health and Leisure</td>
+                <td>Diploma in Sport &amp; Exercise Science</td>
+                <td>DSES</td>
+                <td>R26</td>
+            </tr>
+            <tr>
+                <td>School of Technology for the Arts</td>
+                <td>Diploma in Design for User Experience</td>
+                <td>DDUX</td>
+                <td>R36</td>
+            </tr>
+            <tr>
+                <td>School of Technology for the Arts</td>
+                <td>Diploma in Game Design</td>
+                <td>DGD</td>
+                <td>R35</td>
+            </tr>
+            <tr>
+                <td>School of Technology for the Arts</td>
+                <td>Diploma in Media Production &amp; Design</td>
+                <td>DMPD</td>
+                <td>R19</td>
+            </tr>
+            <tr>
+                <td>School of Technology for the Arts</td>
+                <td>Diploma in Sonic Arts</td>
+                <td>DSA</td>
+                <td>R24</td>
+            </tr>
+            <tr>
+                <td>School of Technology for the Arts</td>
+                <td>Diploma in Arts &amp; Theatre Management</td>
+                <td>DATM</td>
+                <td>R25</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <h3 style="font-size: 30px; font-weight: bold; ">Student Population</h3>
+    <div>
+        <canvas id="PolytechnicDistribution" style="margin-bottom: 100px;"></canvas>
+    </div><br><br>
+
+    <!-- Add the CDN link for the jQuery script here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Add the CDN link for the DataTables script here -->
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+    <!-- Add the CDN link for Chart.js here -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Add the CDN link for the Tippy.js script here -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script>
+        // Add JavaScript to initialise DataTables to the table above
+        $(document).ready(function () {
+            $('#courses').DataTable();
+
+            tippy('#republic', {
+                content: '<b>Republic Polytechnic (RP)</b><br>Student Population: 14400',
+                allowHTML: true, //allow HTML in tippy content
+            });
+
+            tippy('#singapore', {
+                content: '<b>Singapore Polytechnic (SP)</b><br>Student Population: 15900',
+                allowHTML: true, //allow HTML in tippy content
+            });
+
+            tippy('#ngeeann', {
+                content: '<b>Ngee Ann Polytechnic (NP)</b><br>Student Population: 14800',
+                allowHTML: true, //allow HTML in tippy content
+            });
+
+            tippy('#nanyang', {
+                content: '<b>Nanyang Polytechnic (NYP)</b><br>Student Population: 16220',
+                allowHTML: true, //allow HTML in tippy content
+            });
+
+            tippy('#temasek', {
+                content: '<b>Temasek Polytechnic (TP)</b><br>Student Population: 13000',
+                allowHTML: true, //allow HTML in tippy content
+            });
+
+            tippy('#myButton2', {
+                placement: 'right', //place tippy to the right
+                trigger: 'click', //trigger tippy on click
+                interactive: true, //allow interaction in tippy (e.g. click and select text)
+                content: '<strong>Bolded <span style="color: aqua;">content</span></strong>',
+                allowHTML: true, //allow HTML in tippy content
+                delay: 500, //delay tippy showing and hiding (in milliseconds)
+                followCursor: true //get tippy to follow mouse cursor
+            });
+        });
+
+        // Define chart labels
+        const labels = [
+            'Republic Polytechnic',
+            'Temasek Polytechnic',
+            'Ngee Ann Polytechnic',
+            'Nanyang Polytechnic',
+            'Singapore Polytechnic'
+        ];
+
+        // Set labels, colours and data
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'Total number of students',
+                backgroundColor: 'gray',
+                borderColor: 'gray',
+                data: [14400, 13000, 14800, 16220, 15900],
+            }]
+        };
+
+        // Configure chart
+        const config = {
+            type: 'bar',
+            data: data
+        };
+
+        // Render chart in <canvas>
+        const myChart = new Chart(
+            document.getElementById('PolytechnicDistribution'),
+            config
+        );
+    </script>
+</body>
+
+</html>
